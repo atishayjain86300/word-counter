@@ -1,4 +1,6 @@
 import javax.swing.*;
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
 import java.awt.*;
 import java.awt.event.*;
 
@@ -10,7 +12,7 @@ public class WordCounter extends JFrame {
         setTitle("Word Counter is ");
         setSize(400, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
+
         // Create components
         textArea = new JTextArea();
         JScrollPane scrollPane = new JScrollPane(textArea);
